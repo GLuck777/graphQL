@@ -532,14 +532,14 @@ function generateBarChart(data) {
         const y = svgHeight - margin.bottom - barHeight;
         if (d.type == "up") {
             svg += `
-                <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="green">
+                <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="green" style="cursor: help;">
                     <title>Path: ${d.path}\nDate: ${new Date(d.createdAt).toISOString().split('T')[0]}\nAmount: ${d.amount} B\nType: ${d.type}</title>
                 </rect>
             `;
 
         } else {
             svg += `
-                <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="blue">
+                <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="blue" style="cursor: help;">
                     <title>Path: ${d.path}\nDate: ${new Date(d.createdAt).toISOString().split('T')[0]}\nAmount: ${d.amount} B\nType: ${d.type}</title>
                 </rect>
             `;

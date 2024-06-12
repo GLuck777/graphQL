@@ -1,5 +1,5 @@
 Pour acceder au site 
-https://GLuck777.github.io/graphql
+https://gluck777.github.io/graphQL/
 
 Pour acceder au repository
 https://github.com/GLuck777/graphql

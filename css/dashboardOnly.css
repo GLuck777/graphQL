@@ -1,0 +1,103 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    grid-auto-rows: 8rem;
+    grid-auto-flow: dense;
+    width: 100%;
+}
+
+.grid2 {
+    display: flex;
+    justify-content: space-evenly;
+    transition: left 1s ease;
+}
+
+#logout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
+
+.status {
+    padding: 1rem;
+    overflow: auto;
+    height: fit-content;
+}
+
+#historique {
+    border: 1px solid white;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: fit-content;
+    position: absolute;
+    /* top: -76%;
+    left: 50%; */
+    /* top: 30%;
+    left: 45%; */
+    top: 20%;
+    left: 45%;
+    transition: left 0.5s ease;
+}
+
+#historique-list {
+    line-height: 0.3rem;
+}
+#svgContainer h2{
+    margin-top: 5rem;
+}
+
+select.GraphSelect {
+    background: #151414db;
+    color: #dbdada;
+    padding: 0.35rem;
+    border: none;
+    font-size: 0.9rem;
+}
+
+li.HistoricLine {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.radarChart {
+    border-radius: 50%;
+    
+}
+
+.titleschema2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+div.elementdiv{
+    margin-inline: auto;
+}
+
+@media (max-width : 1195px){
+    #historique {
+        /* display: none; */
+        position: relative;
+        top: 1%;
+        left: 5%;
+        margin-bottom: 2rem;
+    }
+    .radarChart{
+        width: 100%;
+        margin-inline: auto;
+        margin-bottom: 4rem;
+    }
+    #svgContainer h2{
+        margin-top: 15rem;
+    }
+    .grid2{
+        flex-direction: column;
+     }
+}

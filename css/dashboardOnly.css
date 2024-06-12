@@ -36,8 +36,7 @@
     overflow-y: auto;
     width: fit-content;
     position: absolute;
-/*     top: 20%; */
-    top: 35%;
+    top: 34%;
     left: 45%;
     transition: left 0.5s ease;
 }
